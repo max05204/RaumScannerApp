@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="control_back">#E4EDE0</color>
+    <color name="control_fore">#EEE8CD</color>
+    <color name="control_buttonBack">#22B4B7</color>
+
 </resources>

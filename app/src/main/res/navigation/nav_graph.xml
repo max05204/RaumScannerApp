@@ -7,22 +7,73 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="de.fhbielefeld.swe.raumscannerapp.FirstFragment"
+        android:name="de.fhbielefeld.swe.raumscannerapp.MenuFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_menu">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_showAllRoomsFragment"
+            app:destination="@id/showAllRoomsFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="de.fhbielefeld.swe.raumscannerapp.SecondFragment"
+        android:name="de.fhbielefeld.swe.raumscannerapp.ScanRoomFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_scanRoom">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_addRoom"
+            app:destination="@id/addRoom" />
+        <action
+            android:id="@+id/action_SecondFragment_to_showRoomFragment"
+            app:destination="@id/showRoomFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_editRoomFragment"
+            app:destination="@id/editRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRoom"
+        android:name="de.fhbielefeld.swe.raumscannerapp.AddRoomFragment"
+        android:label="fragment_add_room"
+        tools:layout="@layout/fragment_add_room" >
+        <action
+            android:id="@+id/action_addRoom_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showRoomFragment"
+        android:name="de.fhbielefeld.swe.raumscannerapp.ShowRoomFragment"
+        android:label="fragment_show_room"
+        tools:layout="@layout/fragment_show_room" >
+        <action
+            android:id="@+id/action_showRoomFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editRoomFragment"
+        android:name="de.fhbielefeld.swe.raumscannerapp.editRoomFragment"
+        android:label="fragment_edit_room"
+        tools:layout="@layout/fragment_edit_room" >
+        <action
+            android:id="@+id/action_editRoomFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAllRoomsFragment"
+        android:name="de.fhbielefeld.swe.raumscannerapp.ShowAllRoomsFragment"
+        android:label="fragment_show_all_rooms"
+        tools:layout="@layout/fragment_show_all_rooms" >
+        <action
+            android:id="@+id/action_showAllRoomsFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_showAllRoomsFragment_to_editRoomFragment"
+            app:destination="@id/editRoomFragment" />
     </fragment>
 </navigation>

@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    private Sqlite_database db = new Sqlite_database();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,4 +75,10 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+    public boolean firtAppStart(){
+        boolean first = false;
+
+        return first;
+    }
+
 }
